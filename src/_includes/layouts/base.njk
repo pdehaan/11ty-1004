@@ -1,0 +1,19 @@
+{%- set tags = tags or [] -%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="keywords" content="{{ tags | join(', ') }}" />
+  <title>{{ title }}</title>
+</head>
+<body>
+
+  {%- include "collection-header.njk" -%}
+
+  <main class="container">
+    {{ content | safe }}
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+{%- if tags.includes("design") -%}
+  {% include "design-header.njk" %}
+{%- elif tags.includes("development") -%}
+  {% include "development-header.njk" %}
+{%- endif -%}
